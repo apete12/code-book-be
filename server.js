@@ -33,11 +33,11 @@ app.post('/api/v1/resources', (request, response) => {
   const id = Date.now();
   const resource = request.body;
 
-  for (let requiredParameter of ['name', 'details', 'link', 'notes']) {
+  for (let requiredParameter of ['name', 'details', 'link', 'notes', 'type']) {
     if (!resource[requiredParameter]) {
       response
         .status(422)
-        .send({ error: `Expected format: { name: <String>, details: <String>, link: <String>, notes: <String> }. You're missing a "${requiredParameter}" property.` });
+        .send({ error: `Expected format: { name: <String>, details: <String>, link: <String>, notes: <String>, type: <String> }. You're missing a "${requiredParameter}" property.` });
       return
     }
   }
