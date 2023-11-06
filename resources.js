@@ -1,80 +1,45 @@
 let resources = [
   {
     id: 1, 
-    name: '', 
-    details: '', 
-    link: '',
+    name: 'WAI Tutorials', 
+    details: 'Collection of tutorials shows you how to develop web content that is accessible to people with disabilities', 
+    link: 'https://www.w3.org/WAI/tutorials/',
     type: 'Article'
   },
   {
     id: 2, 
-    name: '', 
-    details: '', 
-    link: '',
+    name: 'Accessibility Tree - MDN', 
+    details: 'The accessibility tree contains accessibility-related information for most HTML elements.', 
+    link: 'https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree',
     type: 'Article'
   },
   {
     id: 3,
-    name: '', 
-    details: '', 
-    link: '',
+    name: 'PostgreSQL - Youtube Video', 
+    details: 'Setting up postgresql server on frontend', 
+    link: 'https://www.youtube.com/watch?v=O4bNwkC1ZxA',
     type: 'Video'
   },
   {
     id: 4, 
-    name: '', 
-    details: '', 
-    link: '',
+    name: 'GraphQL Youtube', 
+    details: 'Frontend resource for graphql queries and mutations', 
+    link: 'https://www.youtube.com/watch?v=YyUWW04HwKY',
     type: 'Video'
   },
   {
     id: 5, 
-    name: '', 
+    name: 'WCAG Quick Reference', 
     details: '', 
-    link: '',
+    link: 'https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1',
     type: 'Article'
   },
   {
     id: 6, 
-    name: '', 
+    name: 'Typescript Tutorial', 
     details: '', 
-    link: '',
-    type: 'Article'
-  },
-  {
-    id: 7, 
-    name: '', 
-    details: '', 
-    link: '',
+    link: 'https://www.youtube.com/watch?v=FJDVKeh7RJI&t=1475s',
     type: 'Video'
-  },
-  {
-    id: 8, 
-    name: '', 
-    details: '', 
-    link: '',
-    type: 'Video'
-  },
-  {
-    id: 9, 
-    name: '', 
-    details: '', 
-    link: '',
-    type: 'Article'
-  },
-  {
-    id: 10, 
-    name: '', 
-    details: '', 
-    link: '',
-    type: 'Video'
-  },
-  {
-    id: 11, 
-    name: '', 
-    details: '', 
-    link: '',
-    type: 'Article'
   }
 ]
 
