@@ -32,8 +32,7 @@ app.get('/api/v1/resources/:id', (request, response) => {
 app.post('/api/v1/resources', (request, response) => {
   const id = Date.now();
   const resource = request.body;
-
-  for (let requiredParameter of ['name', 'details', 'link', 'notes', 'type']) {
+  for (let requiredParameter of ['name', 'details', 'type', 'notes', 'link']) {
     if (!resource[requiredParameter]) {
       response
         .status(422)
@@ -42,9 +41,9 @@ app.post('/api/v1/resources', (request, response) => {
     }
   }
 
-  const { name, details, type, link } = resource;
-  app.locals.resources.push({ id, name, details, notes, type, link});
-  response.status(201).json({ id, name, details, notes, type, link});
+  const { name, details, type, link, notes } = resource;
+  app.locals.resources.push({ id, name, details, type, link, notes});
+  response.status(201).json({ id, name, details, type, link, notes});
 });
 
 app.delete('/api/v1/resources/:id', (request, response) => {
