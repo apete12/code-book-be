@@ -21,7 +21,7 @@ app.get('/api/v1/resources', (request, response) => {
 app.get('/api/v1/resources/:id', (request, response) => {
   const { id } = request.params;
 
-  const pet = app.locals.resources.find(resource => resource.id === parseInt(id));
+  const resource = app.locals.resources.find(resource => resource.id === parseInt(id));
   if (!resource) {
     return response.sendStatus(404);
   }
